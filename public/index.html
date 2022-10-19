@@ -48,8 +48,10 @@
             class="navbar-toggler-icon"> </span></button>
         <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-            <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Notre
+            <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#agency">Notre
                 agence</a></li>
+            <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#team">Notre
+                équipe</a></li>
             <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">Nos
                 voyages</a></li>
             <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
@@ -60,7 +62,7 @@
         </div>
       </div>
     </nav>
-    <section style="padding-top: 7rem;">
+    <section style="padding-top: 7rem;" id="agency">
       <div class="bg-holder" style="background-image:url(assets/img/hero/hero-bg.svg);">
       </div>
       <!--/.bg-holder-->
@@ -86,11 +88,11 @@
 
     <!-- ============================================-->
     <!-- <section> begin ============================-->
-    <section class="pt-5 pt-md-9" id="service">
+    <section class="pt-5 pt-md-9" id="team">
 
       <div class="container">
         <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img src="assets/img/category/shape.svg"
-            style="max-width: 200px" alt="service" /></div>
+            style="max-width: 200px" alt="team" /></div>
         <div class="mb-7 text-center">
           <h5 class="text-secondary">Notre équipe </h5>
           <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Les employés de l'agence</h3>
@@ -270,7 +272,7 @@
                     </tr>
                     <tr>
                       <td colspan="3">
-                        <input type="button" class="btn btn-primary" name="check-disponibility" id="check-disponibility"
+                        <input type="button" class="btn btn-primary px-3" name="check-disponibility" id="check-disponibility"
                           onclick="testDisponibilite('nb-persons')" value="V&eacute;rifier la disponibilit&eacute;"
                           title="Cliquez ici pour vérifier la disponibilité">
                       </td>
@@ -366,13 +368,13 @@
                     </tr>
                     <tr>
                       <td>
-                        <input type="submit" class="btn btn-primary"
+                        <input type="submit" class="btn btn-primary px-3"
                           onclick="return (testDisponibilite('nb-persons') && confirm('Veuillez confirmer votre choix'))"
                           value="Envoi" name="submit" id="submit"
                           title="Cliquez ici si vous voulez soumettre votre réservation">
                       </td>
                       <td>
-                        <input type="reset" class="btn btn-primary" value="Reset" name="reset" id="reset"
+                        <input type="reset" class="btn btn-primary px-3" value="Reset" name="reset" id="reset"
                           title="Cliquez ici si vous vider le formulaire">
                       </td>
                     </tr>
