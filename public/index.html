@@ -234,21 +234,22 @@
     <!-- ============================================-->
 
 
-
-
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section id="booking">
+    <section class="pt-6">
 
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12">
-            <div class="mb-4 text-center">
-              <h5 class="text-secondary">Remplissez ce formulaire pour réserver votre voyage</h5>
-            </div>
-            <div class="align-items-center mb-5">
-
-              <form action="confirmation.html" class="pl-8 pr-8" method="get">
+        <div class="py-8 px-5 position-relative text-center"
+          style="background-color: rgba(223, 215, 249, 0.199);border-radius: 129px 20px 20px 20px;">
+          <div class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"> <img
+              src="assets/img/cta/send.png" style="max-width:70px;" alt="send icon" /></div>
+          <div class="position-absolute end-0 top-0 z-index--1"> <img src="assets/img/cta/shape-bg2.png" width="264"
+              alt="cta shape" /></div>
+          <div class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"> <img
+              src="assets/img/cta/shape-bg1.png" style="max-width: 340px;" alt="cta shape" /></div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <h2 class="text-secondary lh-1-7 mb-7">Remplissez ce formulaire pour réserver votre voyage</h2>
+                
+              <form action="confirmation.html" class="row g-3 align-items-center w-lg-75 mx-auto" method="get">
                 <div class="row text-center">
                   <table>
                     <tr>
@@ -256,7 +257,7 @@
                         <label for="nb-persons">Nombre de personnes : </label>
                       </td>
                       <td>
-                        <input type="number" class="form-control" name="nb-persons" id="nb-persons"
+                        <input type="number" class="form-control form-little-squirrel-control" name="nb-persons" id="nb-persons"
                           title="Veuillez renseigner le nombre de personnes voyageuses" placeholder="Ex : 2" required>      
                       </td>
                       <td>(*)</td>
@@ -266,7 +267,7 @@
                         <label for="reservation-date">Date de réservation : </label>
                       </td>
                       <td>
-                        <input type="date" class="form-control" name="reservation-date" id="reservation-date"
+                        <input type="date" class="form-control form-little-squirrel-control" name="reservation-date" id="reservation-date"
                           title="Veuillez renseigner la date de réservaton de votre voyage" required>      
                       </td>
                       <td>(*)</td>
@@ -276,7 +277,7 @@
                         <label for="destination-choice">Destination choisie : </label>
                       </td>
                       <td>
-                        <select name="destination-choice" class="form-control" id="destination-choice"
+                        <select name="destination-choice" class="form-control form-little-squirrel-control" id="destination-choice"
                           title="Veuillez renseigner la destination de votre choix" required>
                           <option value="foix">Foix</option>
                           <option value="sarlat">Sarlat</option>
@@ -288,7 +289,7 @@
                     </tr>
                     <tr>
                       <td colspan="3">
-                        <input type="button" class="btn btn-primary px-3" name="check-disponibility" id="check-disponibility"
+                        <input type="button" class="btn btn-danger orange-gradient-btn fs--1" name="check-disponibility" id="check-disponibility"
                           onclick="testDisponibilite('nb-persons')" value="V&eacute;rifier la disponibilit&eacute;"
                           title="Cliquez ici pour vérifier la disponibilité">
                       </td>
@@ -298,7 +299,7 @@
                         <label for="appellation">Appellation : </label>
                       </td>
                       <td>
-                        <select class="form-control" name="appellation" id="appellation" title="Veuillez renseigner votre appellation"
+                        <select class="form-control form-little-squirrel-control" name="appellation" id="appellation" title="Veuillez renseigner votre appellation"
                           required>
                           <option value="mme">Mme</option>
                           <option value="mr">M.</option>
@@ -312,7 +313,7 @@
                         <label for="nom">Nom : </label>
                       </td>
                       <td>
-                        <input type="text" class="form-control" name="nom" id="nom" title="Veuillez renseigner votre nom"
+                        <input type="text" class="form-control form-little-squirrel-control" name="nom" id="nom" title="Veuillez renseigner votre nom"
                           placeholder="Entrez votre nom" required>     
                       </td>
                       <td>(*)</td>
@@ -323,7 +324,7 @@
                         <label for="phone-number">Numéro de téléphone : </label>
                       </td>
                       <td>
-                        <input type="text" class="form-control" name="phone-number" id="phone-number"
+                        <input type="text" class="form-control form-little-squirrel-control" name="phone-number" id="phone-number"
                           title="Veuillez renseigner votre numéro de téléphone" placeholder="Ex : 0123456789"
                           pattern="[0-9]{10}" required>
                       </td>
@@ -334,7 +335,7 @@
                         <label for="email">Adresse e-mail : </label>
                       </td>
                       <td>
-                        <input type="email" class="form-control" name="email" id="email" title="Veuillez renseigner votre adresse e-mail"
+                        <input type="email" class="form-control form-little-squirrel-control" name="email" id="email" title="Veuillez renseigner votre adresse e-mail"
                           placeholder="Ex : prenom.nom@fai.com" required>
                       </td>
                       <td>(*)</td>
@@ -353,7 +354,7 @@
                           value="vacation-check" required>
                         <div id="divIBAN">
                           <label for="iban">IBAN : </label>
-                          <input type="text" class="form-control" name="iban" id="iban" placeholder="FR07 XXXX XXXX XXXX XXXX">
+                          <input type="text" class="form-control form-little-squirrel-control" name="iban" id="iban" placeholder="FR07 XXXX XXXX XXXX XXXX">
                         </div>
                       </td>                
                       <td>(*)</td>
@@ -363,7 +364,7 @@
                         <label for="commentaire">Commentaires :</label>
                       </td>
                       <td>
-                        <textarea name="commentaire" class="form-control" id="commentaire"
+                        <textarea name="commentaire" class="form-control form-little-squirrel-control" id="commentaire"
                           title="Laissez-nous un commentaires si vous le voulez"
                           placeholder="Entrez votre commentaire"></textarea>
                       </td>
@@ -384,13 +385,13 @@
                     </tr>
                     <tr>
                       <td>
-                        <input type="submit" class="btn btn-primary px-3"
+                        <input type="submit" class="btn btn-danger orange-gradient-btn fs--1"
                           onclick="return (testDisponibilite('nb-persons') && confirm('Veuillez confirmer votre choix'))"
                           value="Envoi" name="submit" id="submit"
                           title="Cliquez ici si vous voulez soumettre votre réservation">
                       </td>
                       <td>
-                        <input type="reset" class="btn btn-primary px-3" value="Reset" name="reset" id="reset"
+                        <input type="reset" class="btn btn-danger orange-gradient-btn fs--1" value="Reset" name="reset" id="reset"
                           title="Cliquez ici si vous vider le formulaire">
                       </td>
                     </tr>
