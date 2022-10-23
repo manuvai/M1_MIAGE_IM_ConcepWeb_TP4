@@ -248,155 +248,169 @@
           <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
               <h2 class="text-secondary lh-1-7 mb-7">Remplissez ce formulaire pour réserver votre voyage</h2>
-                
-              <form action="confirmation.html" class="row g-3 align-items-center w-lg-75 mx-auto" method="get">
-                <div class="row text-center">
-                  <table>
-                    <tr>
-                      <td>
-                        <label for="nb-persons">Nombre de personnes : </label>
-                      </td>
-                      <td>
-                        <input type="number" class="form-control form-little-squirrel-control" name="nb-persons" id="nb-persons"
-                          title="Veuillez renseigner le nombre de personnes voyageuses" placeholder="Ex : 2" required>      
-                      </td>
-                      <td>(*)</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="reservation-date">Date de réservation : </label>
-                      </td>
-                      <td>
-                        <input type="date" class="form-control form-little-squirrel-control" name="reservation-date" id="reservation-date"
-                          title="Veuillez renseigner la date de réservaton de votre voyage" required>      
-                      </td>
-                      <td>(*)</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="destination-choice">Destination choisie : </label>
-                      </td>
-                      <td>
-                        <select name="destination-choice" class="form-control form-little-squirrel-control" id="destination-choice"
+              <form action="confirmation.html" class="row g-3 align-items-center mx-auto" method="get">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="mb-4 col-4">
+                      <label for="nb-persons" class="align-middle">Nombre de personnes : </label>
+                    </div>
+                    <div class="col-7">
+                      <input type="number" class="form-control form-little-squirrel-control" name="nb-persons" id="nb-persons"
+                          title="Veuillez renseigner le nombre de personnes voyageuses" width="30" placeholder="Ex : 2" required>
+                    </div>
+                    <div class="col-1">
+                      (*)
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="mb-4 col-4">
+                      <label for="reservation-date">Date de réservation : </label>
+                    </div>
+                    <div class="col-7">
+                      <input type="date" class="form-control form-little-squirrel-control" name="reservation-date" id="reservation-date"
+                          title="Veuillez renseigner la date de réservaton de votre voyage" required>
+                    </div>
+                    <div class="col-1">
+                      (*)
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="mb-4 col-4">
+                      <label for="destination-choice">Destination choisie : </label>
+                    </div>
+                    <div class="col-7">
+                      <select name="destination-choice" class="form-control form-little-squirrel-control" id="destination-choice"
                           title="Veuillez renseigner la destination de votre choix" required>
                           <option value="foix">Foix</option>
                           <option value="sarlat">Sarlat</option>
                           <option value="gorge">Gorge de l’Ardèche</option>
                           <option value="canal">Canal du Midi</option>
                         </select>
-                      </td>
-                      <td>(*)</td>
-                    </tr>
-                    <tr>
-                      <td colspan="3">
-                        <input type="button" class="btn btn-danger orange-gradient-btn fs--1" name="check-disponibility" id="check-disponibility"
-                          onclick="testDisponibilite('nb-persons')" value="V&eacute;rifier la disponibilit&eacute;"
-                          title="Cliquez ici pour vérifier la disponibilité">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="appellation">Appellation : </label>
-                      </td>
-                      <td>
-                        <select class="form-control form-little-squirrel-control" name="appellation" id="appellation" title="Veuillez renseigner votre appellation"
-                          required>
-                          <option value="mme">Mme</option>
-                          <option value="mr">M.</option>
-                        </select>
-                        
-                      </td>
-                      <td>(*)</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="nom">Nom : </label>
-                      </td>
-                      <td>
-                        <input type="text" class="form-control form-little-squirrel-control" name="nom" id="nom" title="Veuillez renseigner votre nom"
-                          placeholder="Entrez votre nom" required>     
-                      </td>
-                      <td>(*)</td>
-                        
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="phone-number">Numéro de téléphone : </label>
-                      </td>
-                      <td>
-                        <input type="text" class="form-control form-little-squirrel-control" name="phone-number" id="phone-number"
-                          title="Veuillez renseigner votre numéro de téléphone" placeholder="Ex : 0123456789"
-                          pattern="[0-9]{10}" required>
-                      </td>
-                      <td>(*)</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="email">Adresse e-mail : </label>
-                      </td>
-                      <td>
-                        <input type="email" class="form-control form-little-squirrel-control" name="email" id="email" title="Veuillez renseigner votre adresse e-mail"
-                          placeholder="Ex : prenom.nom@fai.com" required>
-                      </td>
-                      <td>(*)</td>
+                    </div>
+                    <div class="col-1">
+                      (*)
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="mb-4 col-12">
+                      <input type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" name="check-disponibility" id="check-disponibility"
+                      onclick="testDisponibilite('nb-persons')" value="V&eacute;rifier la disponibilit&eacute;"
+                      title="Cliquez ici pour vérifier la disponibilité">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="mb-4 col-4">
+                      <label for="appellation">Appellation : </label>
+                    </div>
+                    <div class="col-7">
+                      <select class="form-control form-little-squirrel-control" name="appellation" id="appellation" title="Veuillez renseigner votre appellation"
+                        required>
+                        <option value="mme">Mme</option>
+                        <option value="mr">M.</option>
+                      </select>
+                    </div>
+                    <div class="col-1">
+                      (*)
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="mb-4 col-4">
+                      <label for="nom">Nom : </label>
+                    </div>
+                    <div class="col-7">
+                      <input type="text" class="form-control form-little-squirrel-control" name="nom" id="nom" title="Veuillez renseigner votre nom"
+                        placeholder="Entrez votre nom" required>
+                    </div>
+                    <div class="col-1">
+                      (*)
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="mb-4 col-4">
+                      <label for="phone-number">Numéro de téléphone : </label>
+                    </div>
+                    <div class="col-7">
+                      <input type="text" class="form-control form-little-squirrel-control" name="phone-number" id="phone-number"
+                        title="Veuillez renseigner votre numéro de téléphone" placeholder="Ex : 0123456789"
+                        pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="col-1">
+                      
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="mb-4 col-4">
+                      <label for="email">Adresse e-mail : </label>
+                    </div>
+                    <div class="col-7">
+                      <input type="email" class="form-control form-little-squirrel-control" name="email" id="email" title="Veuillez renseigner votre adresse e-mail"
+                        placeholder="Ex : prenom.nom@fai.com" required>
+                    </div>
+                    <div class="col-1">
+                      (*)
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="mb-4 col-4">
+                      Moyen de paiement :
+                    </div>
+                    <div class="col-7">
+                      <label for="virement">Virement</label>
+                      <input type="radio" name="payment-mode[]" id="virement" onclick="afficherIBAN()" value="virement"
+                        required checked>
+                      <label for="vacation-check">Ch&egrave;ques vacances</label>
+                      <input type="radio" name="payment-mode[]" id="vacation-check" onclick="cacherIBAN()"
+                        value="vacation-check" required>
+                      <div id="divIBAN">
+                        <label for="iban">IBAN : </label>
+                        <input type="text" class="form-little-squirrel-control" name="iban" id="iban" placeholder="FR07 XXXX XXXX XXXX XXXX">
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      (*)
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="mb-4 col-4">
+                      <label for="commentaire">Commentaires :</label>
+                    </div>
+                    <div class="col-7">
+                      <textarea name="commentaire" class="form-control form-little-squirrel-control" id="commentaire"
+                        title="Laissez-nous un commentaires si vous le voulez"
+                        placeholder="Entrez votre commentaire"></textarea>
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <input type="checkbox" checked name="accept-offers" id="accept-offers">
+                      <label for="accept-offers">Je souhaite recevoir des offres promotionnelles.</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <input type="checkbox" name="accept-conditions" id="accept-conditions" required>
+                      <label for="accept-conditions">J’ai lu les conditions générales de vente. </label>
+                    </div>
+                  </div>
 
-                    </tr>
-                    <tr>
-                      <td>
-                        Moyen de paiement :
-                      </td>
-                      <td>
-                        <label for="virement">Virement</label>
-                        <input type="radio" name="payment-mode[]" id="virement" onclick="afficherIBAN()" value="virement"
-                          required checked>
-                        <label for="vacation-check">Ch&egrave;ques vacances</label>
-                        <input type="radio" name="payment-mode[]" id="vacation-check" onclick="cacherIBAN()"
-                          value="vacation-check" required>
-                        <div id="divIBAN">
-                          <label for="iban">IBAN : </label>
-                          <input type="text" class="form-control form-little-squirrel-control" name="iban" id="iban" placeholder="FR07 XXXX XXXX XXXX XXXX">
-                        </div>
-                      </td>                
-                      <td>(*)</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="commentaire">Commentaires :</label>
-                      </td>
-                      <td>
-                        <textarea name="commentaire" class="form-control form-little-squirrel-control" id="commentaire"
-                          title="Laissez-nous un commentaires si vous le voulez"
-                          placeholder="Entrez votre commentaire"></textarea>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">
-                        <input type="checkbox" checked name="accept-offers" id="accept-offers">
-                        <label for="accept-offers">Je souhaite recevoir des offres promotionnelles.</label>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">
-                        <input type="checkbox" name="accept-conditions" id="accept-conditions" required>
-                        <label for="accept-conditions">J’ai lu les conditions générales de vente. </label>
-
-                      </td>
-                      <td>(*)</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="submit" class="btn btn-danger orange-gradient-btn fs--1"
+                  <div class="row">
+                    <div class="col-6">
+                      <input type="submit" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
                           onclick="return (testDisponibilite('nb-persons') && confirm('Veuillez confirmer votre choix'))"
                           value="Envoi" name="submit" id="submit"
                           title="Cliquez ici si vous voulez soumettre votre réservation">
-                      </td>
-                      <td>
-                        <input type="reset" class="btn btn-danger orange-gradient-btn fs--1" value="Reset" name="reset" id="reset"
+                    </div>
+                    <div class="col-6">
+                      <input type="reset" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" value="Reset" name="reset" id="reset"
                           title="Cliquez ici si vous vider le formulaire">
-                      </td>
-                    </tr>
-                  </table>
-                  
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <p class="text-align-right text-mute">
+                      Les informations suivies d'un astérisque sont obligatoires.
+                    </p>
+                  </div>
                 </div>
               </form>
             </div>
