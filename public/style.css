@@ -1,3 +1,7 @@
 .img-logo-agency {
     max-width: 65%;
 }
+
+#divIBAN {
+    display: none;
+}
