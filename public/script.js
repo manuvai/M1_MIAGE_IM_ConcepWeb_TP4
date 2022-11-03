@@ -7,6 +7,8 @@ function testDisponibilite(id) {
     let isValid = true;
     let destinationChoice = document.getElementById("destination-choice").value;
     let paymentByVacationCheck = document.getElementById("vacation-check").checked;
+    let paymentByTransfer = document.getElementById("virement").checked;
+    let valIBAN = document.getElementById("iban").value;
 
     if (isNaN(nbVoyageurs)) {
         isValid = false;
@@ -23,6 +25,9 @@ function testDisponibilite(id) {
     } else if (paymentByVacationCheck && (nbVoyageurs != 1 && nbVoyageurs != 2)) {
         isValid = false;
         alert("Le mode de paiement « Chèques vacances » n’est possible que pour 1 ou 2 personnes");
+    } else if (paymentByTransfer && valIBAN.length <= 0) {
+        isValid = false;
+        alert("Pour le paiement par virement, vous devez renseigner l'IBAN");
     }
 
     return isValid;
